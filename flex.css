@@ -124,132 +124,173 @@ search-input input:focus {
   color: 0, 0, 0, 0.7;
 }
 
-header{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-   gap: 1rem;
-    background-image: url(/Arşiv/stock.jpg);
-    margin: 1rem 1rem 1rem 1rem;
-    padding: 1rem 1rem 1rem 1rem;
-    
-
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background-image: url(/Arşiv/stock.jpg);
+  margin: 1rem 1rem 1rem 1rem;
+  padding: 1rem 1rem 1rem 1rem;
 }
 
-.essentials{
-    background-color: #d5dee5;
-    display: flex;
-    align-items: center;
+.essentials {
+  background-color: #d5dee5;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px black;
+}
+.essential-text {
+  padding: 20px;
+  font-style: italic;
+  font-size: 2rem;
+  letter-spacing: 0.3px;
+}
+
+.lighting {
+  background-color: #ffc868;
+  width: 400px;
+  height: 300px;
+  position: relative;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 5px 5px 10px black;
+}
+
+.lighting img {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 300px;
+}
+
+.light {
+  width: 80%;
+  float: right;
+  margin-top: 20px;
+  font-style: italic;
+  padding: 2rem;
+}
+
+.categorySection {
+  background-color: #aea08d;
+}
+
+.category-part,
+.product-part {
+  padding: 2rem;
+  font-size: 1.5rem;
+}
+
+.categories,
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.category {
+  width: 20rem;
+  height: 20rem;
+  background-color: #eeecec;
+  padding: 1rem 2px 1rem 1rem;
+  border-radius: 10px;
+  margin: 1rem;
+  box-shadow: 2px 2px 20px black;
+}
+
+.category img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 1rem 10px 1rem 1rem;
+  border-radius: 2rem;
+}
+.productSection {
+  background-color: #eeecec;
+}
+.product-part {
+}
+
+.products {
+}
+.product {
+  height: 20rem;
+  width: 20rem;
+  background-color: #d9d9d9;
+  margin: 1rem;
+  box-shadow: 2px 2px 20px;
+  border-radius: 1rem;
+  overflow: hidden;
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+  height: 88%;
+  object-fit: cover;
+  transition: 1s;
+}
+
+.product p {
+  position: relative;
+  z-index: 4;
+}
+
+.product img:hover {
+  transform: scale(1.08);
+}
+
+.contact {
+  /* background-color: orange; */
+  padding: 2rem;
+  display: flex;
+}
+
+.expert {
+  flex: 3;
+  padding: 1rem;
+  background-color: inherit;
+}
+
+.formSection {
+  flex: 2;
+  /* background-color: teal; */
+}
+
+.lookforexper{
+    font-size: 3rem;
+    line-height: 1.5;
+   font-family: "Bellota Text", serif ;
+}
+
+.leaveinfo{
+    font-family: "judson", serif;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.formElement input{
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    border-bottom: 1px solid black;
+    padding: 0.5rem 0;
+    font-size: 1.2rem;
+}
+
+.submit{
+    padding: 1rem;
     border-radius: 5px;
-    box-shadow: 5px 5px 10px black;
-
-}
-.essential-text{
-    padding: 20px;
-    font-style: italic;
-    font-size: 2rem;
-    letter-spacing: 0.3px;
-}
-
-.lighting{
-    background-color: #ffc868;
-    width: 400px;
-    height: 300px;
-    position: relative;
-    border-radius: 25px;
-    overflow: hidden;
-    box-shadow: 5px 5px 10px black;
-
-}
-
-.lighting img{
-position: absolute;
-bottom: 0;
-width: 100%;
-height: 300px;
-
-
-}
-
-.light{
-    width: 80%;
-    float: right;
-    margin-top: 20px;
-    font-style: italic;
-    padding: 2rem;
-}
-
-.categorySection{
-    background-color: #aea08d;
-
-
-}
-
-.category-part, .product-part{
-    padding: 2rem;
-    font-size: 1.5rem;
-}
-
-.categories, .products{
+    width: 13rem;
+    height: 40px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content:center ;
-}
-
-.category{
-    width: 20rem;
-    height: 20rem;
-    background-color: #eeecec;
-    padding: 1rem 2px 1rem 1rem;
-    border-radius: 10px;
-    margin: 1rem;
-    box-shadow: 2px 2px 20px black;
-}
-
-.category img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    padding: 1rem 10px 1rem 1rem;
-    border-radius: 2rem;
-}
-.productSection{
-    background-color: #eeecec;
-
-}
-.product-part{
-
-}
-
-.products{
-    
-}
-.product{
-height: 20rem;
-width: 20rem;
-background-color: #d9d9d9;
-margin: 1rem;
-box-shadow: 2px 2px 20px;
-border-radius: 1rem;
-overflow: hidden;
-text-align: center;
-
-}
-
-.product img{
-    width: 100%;
-    height: 88%;
-    object-fit: cover;
-    transition: 1s;
-
-}
-
-.product p{
-    position: relative;
-    z-index: 4;
-}
-
-.product img:hover{
-    transform: scale(1.08);
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    font-style: italic;
+    margin-left: 1rem;
 }
